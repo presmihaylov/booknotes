@@ -319,7 +319,7 @@ This relationship is expressed by the PACELC theorem:
 Similar to CAP, the choices are a spectrum, not binary.
 
 Due to these considerations, there are data stores which come with counter-intuitive consistency guarantees in order to provide strong availability and performance.
-Others allow you to configure how consistent you want them to be - eg Amazon's Cosmos DB and Cassandra.
+Others allow you to configure how consistent you want them to be - eg Microsoft's Azure Cosmos DB and Cassandra.
 
 Taken from another angle, PACELC implies that there is a trade-off between the required coordination and performance.
 One way to design around this is to move coordination away from the critical path.

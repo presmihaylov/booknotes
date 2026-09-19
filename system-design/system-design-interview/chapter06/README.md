@@ -15,7 +15,7 @@ However, whenever new servers are added or removed, the result of the above equa
 This causes a lot of cache misses as clients will be connected to new instances which will have to fetch the user data from cache all over again.
 
 # Consistent hashing
-Consistent hashing is a technique which allows only a K/N servers to be remapped whenever N changes, where K is the number of keys.
+Consistent hashing is a technique that remaps only approximately K/N keys whenever the number of servers changes, where K is the number of keys and N is the number of servers.
 
 For example, K=100, N=10 -> 10 re-mappings, compared to close to 100 in the normal scenario.
 

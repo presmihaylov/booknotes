@@ -33,7 +33,7 @@ This solves the scalability issues as id generation is confined within a single 
  * Adding/removing servers breaks this mechanism
 
 ## UUID
-A UUID is a 128-byte unique ID.
+A UUID is a 128-bit unique ID.
 
 The probability of UUID collision across the whole world is very little.
 
@@ -44,7 +44,7 @@ Pros:
  * Easy to scale.
 
 Cons:
- * IDs are 128 bytes, which doesn't fit our requirement
+ * IDs are 128 bits, which doesn't fit our requirement
  * IDs do not increase with time
  * IDs can be non-numeric
 

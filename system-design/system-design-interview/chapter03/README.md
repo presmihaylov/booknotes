@@ -70,9 +70,10 @@ Estimations:
      * If we assume 1mb per media -> 30mil * 1mb = 30tb per day
      * in 5y -> 30tb * 365 * 5 == 55pb
  * tweet storage estimation:
-     * 1 tweet = 64byte id + 140 bytes text + 1000 bytes metadata
-     * 3500 * 60 * 60 * 24 = 302mb per day
-     * In 5y -> 302 * 365 * 5 == 551gb in 5y
+     * 1 tweet = 64-byte ID + 140 bytes text + 1000 bytes metadata = 1,204 bytes
+     * 3500 * 60 * 60 * 24 = 302,400,000 tweets per day
+     * 302,400,000 tweets * 1,204 bytes/tweet = 364,089,600,000 bytes ≈ 364 GB per day
+     * In 5y -> 364 GB * 365 * 5 ≈ 664 TB in 5y
 
 # Tips
 Back-of-the-envelope Estimations are about the process, not the results. Interviewers might test your problem-solving skills.
